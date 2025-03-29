@@ -49,6 +49,123 @@ export default function HomeScreen() {
   };
 
 
+  // BEGIN Global Areas
+  const DO_NOT_HIDE_1 = [
+    { latitude: 49.2630869, longitude: -123.2506825 },
+    { latitude: 49.2627946, longitude: -123.2504143 },
+    { latitude: 49.2629031, longitude: -123.2501139 },
+    { latitude: 49.2629678, longitude: -123.2501621 },
+    { latitude: 49.2631971, longitude: -123.249564 },
+    { latitude: 49.2632829, longitude: -123.2496311 },
+    { latitude: 49.2631919, longitude: -123.24991 },
+    { latitude: 49.2633214, longitude: -123.2500146 },
+    { latitude: 49.2630869, longitude: -123.2506825 }
+  ];
+
+  const DO_NOT_HIDE_2 = [
+      { latitude: 49.2645097, longitude: -123.2521336 },
+      { latitude: 49.2644887, longitude: -123.2522248 },
+      { latitude: 49.2636906, longitude: -123.2515918 },
+      { latitude: 49.2637186, longitude: -123.2514952 },
+      { latitude: 49.2645097, longitude: -123.2521336 }
+  ];
+
+  
+  // BEGIN Big Map
+  const ORCH_MCML = [
+      { latitude: 49.2597766, longitude: -123.2515649 },
+      { latitude: 49.2605468, longitude: -123.2493011 },
+      { latitude: 49.2616146, longitude: -123.2501702 },
+      { latitude: 49.2611944, longitude: -123.2513504 },
+      { latitude: 49.2610894, longitude: -123.2514844 },
+      { latitude: 49.2607008, longitude: -123.2526002 },
+      { latitude: 49.2604487, longitude: -123.2523696 },
+      { latitude: 49.2602072, longitude: -123.2519941 },
+      { latitude: 49.2597766, longitude: -123.2515649 }
+  ];
+
+  const ICCS_DMP_BRIM = [
+      { latitude: 49.2605468, longitude: -123.2493011 },
+      { latitude: 49.2613302, longitude: -123.2470038 },
+      { latitude: 49.262293, longitude: -123.2477333 },
+      { latitude: 49.2618834, longitude: -123.2488169 },
+      { latitude: 49.2616628, longitude: -123.2486345 },
+      { latitude: 49.2611727, longitude: -123.2498094 },
+      { latitude: 49.2605468, longitude: -123.2493011 }
+  ];
+
+  const HORT_FWRD = [
+      { latitude: 49.2607008, longitude: -123.2526002 },
+      { latitude: 49.2610894, longitude: -123.2514844 },
+      { latitude: 49.2611944, longitude: -123.2513504 },
+      { latitude: 49.2616146, longitude: -123.2501702 },
+      { latitude: 49.2623717, longitude: -123.2508038 },
+      { latitude: 49.2618956, longitude: -123.2522898 },
+      { latitude: 49.2618676, longitude: -123.2527243 },
+      { latitude: 49.261759, longitude: -123.252971 },
+      { latitude: 49.261703, longitude: -123.2532929 },
+      { latitude: 49.2616155, longitude: -123.2533734 },
+      { latitude: 49.2607008, longitude: -123.2526002 }
+  ];
+
+  const MCLD_KAIS_CEME = [
+      { latitude: 49.2611727, longitude: -123.2498094 },
+      { latitude: 49.2616628, longitude: -123.2486345 },
+      { latitude: 49.2618834, longitude: -123.2488169 },
+      { latitude: 49.262293, longitude: -123.2477333 },
+      { latitude: 49.2637393, longitude: -123.2489317 },
+      { latitude: 49.2635293, longitude: -123.2495057 },
+      { latitude: 49.2632829, longitude: -123.2496311 },
+      { latitude: 49.2627946, longitude: -123.2504143 },
+      { latitude: 49.2625736, longitude: -123.2509702 },
+      { latitude: 49.2611727, longitude: -123.2498094 }
+  ];
+
+  const CIRS_EOSC_ESB = [
+      { latitude: 49.261703, longitude: -123.2532929 },
+      { latitude: 49.261759, longitude: -123.252971 },
+      { latitude: 49.2618676, longitude: -123.2527243 },
+      { latitude: 49.2618956, longitude: -123.2522898 },
+      { latitude: 49.2623717, longitude: -123.2508038 },
+      { latitude: 49.2636091, longitude: -123.2518326 },
+      { latitude: 49.2631697, longitude: -123.2530584 },
+      { latitude: 49.2631076, longitude: -123.2534191 },
+      { latitude: 49.2627917, longitude: -123.2534822 },
+      { latitude: 49.2628319, longitude: -123.2539891 },
+      { latitude: 49.2621633, longitude: -123.2534366 },
+      { latitude: 49.261703, longitude: -123.2532929 }
+  ];
+
+  const FNH_Beaty = [
+      { latitude: 49.2625736, longitude: -123.2509702 },
+      { latitude: 49.2627946, longitude: -123.2504143 },
+      { latitude: 49.2632829, longitude: -123.2496311 },
+      { latitude: 49.2635293, longitude: -123.2495057 },
+      { latitude: 49.2637393, longitude: -123.2489317 },
+      { latitude: 49.2644484, longitude: -123.2494718 },
+      { latitude: 49.2636091, longitude: -123.2518326 },
+      { latitude: 49.2625736, longitude: -123.2509702 }
+  ];
+
+  const POND_SCRF = [
+      { latitude: 49.2639549, longitude: -123.254865 },
+      { latitude: 49.2628319, longitude: -123.2539891 },
+      { latitude: 49.2627917, longitude: -123.2534822 },
+      { latitude: 49.2631076, longitude: -123.2534191 },
+      { latitude: 49.2631697, longitude: -123.2530584 },
+      { latitude: 49.2636091, longitude: -123.2518326 },
+      { latitude: 49.264704, longitude: -123.2527192 },
+      { latitude: 49.2639549, longitude: -123.254865 }
+  ];
+
+  const BIOL_Bookstore = [
+      { latitude: 49.264704, longitude: -123.2527192 },
+      { latitude: 49.2636091, longitude: -123.2518326 },
+      { latitude: 49.2644484, longitude: -123.2494718 },
+      { latitude: 49.2654476, longitude: -123.2504532 },
+      { latitude: 49.264704, longitude: -123.2527192 }
+  ];
+
   // BEGIN Small Map
   const ceme = [
     { latitude: 49.2622799, longitude: -123.2507242 },
@@ -108,7 +225,6 @@ export default function HomeScreen() {
     { latitude: 49.2640887, longitude: -123.2504399 },
     { latitude: 49.2635787, longitude: -123.2518185 }
   ];
-
 
   const scrf = [
     { latitude: 49.2637561, longitude: -123.2536637 },
