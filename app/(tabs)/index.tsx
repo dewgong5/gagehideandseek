@@ -48,6 +48,20 @@ export default function HomeScreen() {
     );
   };
 
+
+  // BEGIN Small Map
+  const ceme = [
+    { latitude: 49.2622799, longitude: -123.2507242 },
+    { latitude: 49.2623887, longitude: -123.2498379 },
+    { latitude: 49.2629839, longitude: -123.2483144 },
+    { latitude: 49.2637393, longitude: -123.2489317 },
+    { latitude: 49.2635431, longitude: -123.2495858 },
+    { latitude: 49.2633891, longitude: -123.2497092 },
+    { latitude: 49.2632829, longitude: -123.2496311 },
+    { latitude: 49.2627689, longitude: -123.2511641 },
+    { latitude: 49.2622799, longitude: -123.2507242 }
+  ];
+
   const cirs = [
     { latitude: 49.261703, longitude: -123.2532929 },
     { latitude: 49.2616361, longitude: -123.2526167 },
@@ -58,6 +72,43 @@ export default function HomeScreen() {
     { latitude: 49.2621633, longitude: -123.2534366 },
     { latitude: 49.261703, longitude: -123.2532929 },
   ];
+
+  const fnh = [
+      { latitude: 49.2633891, longitude: -123.2497092 },
+      { latitude: 49.2635431, longitude: -123.2495858 },
+      { latitude: 49.2637393, longitude: -123.2489317 },
+      { latitude: 49.2644484, longitude: -123.2494718 },
+      { latitude: 49.2640887, longitude: -123.2504399 },
+      { latitude: 49.2633891, longitude: -123.2497092 }
+  ];
+
+  const esb = [
+    { latitude: 49.263018, longitude: -123.2534389 },
+    { latitude: 49.2617227, longitude: -123.2523606 },
+    { latitude: 49.2622799, longitude: -123.2507242 },
+    { latitude: 49.2635787, longitude: -123.2518185 },
+    { latitude: 49.2632181, longitude: -123.2529289 },
+    { latitude: 49.2631516, longitude: -123.2534171 },
+    { latitude: 49.263018, longitude: -123.2534389 },
+  ];
+
+  const pond = [
+    { latitude: 49.2639549, longitude: -123.254865 },
+    { latitude: 49.263476, longitude: -123.2544791 },
+    { latitude: 49.2637561, longitude: -123.2536637 },
+    { latitude: 49.2642252, longitude: -123.2540071 },
+    { latitude: 49.2639549, longitude: -123.254865 }
+  ];
+
+  const beaty = [
+    { latitude: 49.2635787, longitude: -123.2518185 },
+    { latitude: 49.2627689, longitude: -123.2511641 },
+    { latitude: 49.2632829, longitude: -123.2496311 },
+    { latitude: 49.2634131, longitude: -123.2497264 },
+    { latitude: 49.2640887, longitude: -123.2504399 },
+    { latitude: 49.2635787, longitude: -123.2518185 }
+  ];
+
 
   const scrf = [
     { latitude: 49.2637561, longitude: -123.2536637 },
@@ -71,35 +122,14 @@ export default function HomeScreen() {
     { latitude: 49.2642546, longitude: -123.2540337 },
     { latitude: 49.2637561, longitude: -123.2536637 },
   ];
-  
 
-  const beaty = [
-    { latitude: 49.2625743, longitude: -123.250664 },
-    { latitude: 49.2627633, longitude: -123.2501759 },
-    { latitude: 49.2623887, longitude: -123.2498379 },
-    { latitude: 49.2629524, longitude: -123.2482876 },
-    { latitude: 49.2637393, longitude: -123.2489317 },
-    { latitude: 49.2635431, longitude: -123.2495858 },
-    { latitude: 49.2633891, longitude: -123.2497092 },
-    { latitude: 49.2632829, longitude: -123.2496311 },
-    { latitude: 49.2631919, longitude: -123.24991 },
-    { latitude: 49.263291, longitude: -123.2499989 },
-    { latitude: 49.262962, longitude: -123.251002 },
-    { latitude: 49.2625743, longitude: -123.250664 }
-  ];
-
-  const esb = [
-    { latitude: 49.263018, longitude: -123.2534389 },
-    { latitude: 49.2617227, longitude: -123.2523606 },
-    { latitude: 49.2622799, longitude: -123.2507242 },
+  const biol = [
     { latitude: 49.2635787, longitude: -123.2518185 },
-    { latitude: 49.2632181, longitude: -123.2529289 },
-    { latitude: 49.2631516, longitude: -123.2534171 },
-    { latitude: 49.263018, longitude: -123.2534389 },
+    { latitude: 49.2644484, longitude: -123.2494718 },
+    { latitude: 49.2654476, longitude: -123.2504532 },
+    { latitude: 49.264704, longitude: -123.2527192 },
+    { latitude: 49.2635787, longitude: -123.2518185 }
   ];
-
-
-
 
   useEffect(() => {
     let locationSubscription;
@@ -193,7 +223,7 @@ export default function HomeScreen() {
                   />
 
                   <Polygon
-                    coordinates={beaty}  
+                    coordinates={ceme}  
                     fillColor="rgba(200, 93, 0, 0.5)"
                     strokeColor="rgb(200, 90, 0)"
                     strokeWidth={2}
